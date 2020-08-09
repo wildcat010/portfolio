@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "title": "This website",
+    "description": "This project to present my portfolio is a technological showcase. I developed it with my favorite framework of the moment: the latest version of Angular (8).",
+    "url": "here :)",
+    "technologies": [ "ASP .NET Core", "Angular 8", "Typescript", "Webpack", "API", "Angular Material" ],
+    "image": "MyPortfolio.png"
+  },
+  {
+    "id": 2,
+    "title": "Stone Dealer",
+    "description": "This is an e-commerce project, the website is no more online. It was developed for a particular to sell some precious stones in Europe. To make it simple, it was using the PayPal API to be user friendly for the payment.",
+    "url": "N/A",
+    "technologies": [ "ASP .NET MVC 4/5", "PayPal API", "Knockout", "AngularJs" ],
+    "image": "stoneDealer.png"
+  },
+  {
+    "id": 3,
+    "title": "Swift Receipt",
+    "description": "This project which is still online, allows you to scan your supermarket receipt, if you have purchased products under promotional offer, you will receive coupons for other purchases",
+    "url": "https://www.swiftreceipt.co.uk/",
+    "technologies": ["ASP .NET MVC 4/5", "AngularJs", "API" ],
+    "image": "swiftreceipt.png"
+  },
+  {
+    "id": 4,
+    "title": "Dr Beckmann & Costa coffee",
+    "description": "It was a limited-time project (6 months). In association with Costa Coffee, Dr. Beckmann has offered coupons for the latter if you have purchased the latest Beckmann products",
+    "url": "N/A",
+    "technologies": [ "ASP .NET MVC 4/5", "AngularJs" ],
+    "image": "noPictures.png" 
+  }
+]

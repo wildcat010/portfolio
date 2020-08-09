@@ -1,0 +1,22 @@
+﻿<section class="site-section" id="skills" [@flyInOut]="'in'" (@flyInOut.done)="animEnd($event)">
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-md-3 mb-3">
+                <div class="section-heading">
+                    <h2>My <strong>Skills</strong></h2>
+                </div>
+            </div>
+            <div class="col-md-9" >
+                <div class="skill" *ngFor="let skill of mySkills">
+                    <h3>{{skill.skill}}</h3>
+                    
+                    <div class="progress">
+                        <mat-progress-bar mode="determinate" [value]=skill.mastering class="green-progress">
+                        </mat-progress-bar>
+                    </div>
+                </div>
+                <p>If you want more information about the skills I used for my different jobs, please feel free to go to the "Resume" section.</p>
+            </div>
+        </div>
+    </div>
+</section>

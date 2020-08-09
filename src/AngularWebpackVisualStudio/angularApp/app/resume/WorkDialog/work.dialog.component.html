@@ -1,0 +1,36 @@
+﻿<div>
+    <h1 mat-dialog-title>{{data.work.title}} - {{data.work.role}}</h1>
+
+    <div mat-dialog-content>
+        <div>
+            <div>
+                <p><span class="date" style="font-weight:bold;">Date: {{data.work.time}}</span></p>
+                <p style="font-weight:bold;">Place: {{data.work.place}}</p>
+            </div>
+
+        </div>
+        <div>
+            <div><p style="font-weight: bold;">Activity of the company: <span> {{data.work.activity}} </span></p></div>
+        </div>
+        <br />
+        <p style="text-align: justify;"><span style="font-weight: bold">Description: </span><br /> {{data.work.description}}</p>
+        <br />
+        <p><span style="font-weight: bold">Skills: </span></p>
+        <ul>
+            <li *ngFor="let skill of data.work.skills">
+                {{skill}}
+            </li>
+        </ul>
+
+        <p><span style="font-weight: bold">Versioning and others tools: </span></p>
+        <ul>
+            <li *ngFor="let skill2 of data.work.skills2">
+                {{skill2}}
+            </li>
+        </ul>
+
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button [mat-dialog-close] cdkFocusInitial class="outline">Close</button>
+    </div>
+</div>

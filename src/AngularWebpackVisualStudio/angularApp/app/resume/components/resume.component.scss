@@ -1,0 +1,13 @@
+﻿.outline {
+    border: 1px solid grey;
+    outline: none;
+}
+
+.color-white {
+    color: #fff;
+}
+
+/deep/ .cdk-overlay-pane {
+    position: absolute !important;
+    top: 10px;
+}

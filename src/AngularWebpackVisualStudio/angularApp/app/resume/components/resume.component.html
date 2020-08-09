@@ -1,0 +1,49 @@
+﻿<div [@contactAnim]="'in'">
+    <section class="site-portfolio" style="background-image: url(assets/resume.jpg);" id="section-home" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row intro-text align-items-center justify-content-center">
+                <div class="col-md-10 text-center">
+                    <h1 class="site-heading site-animate">Resume/CV</h1>
+                    <p class="lead site-subheading mb-4 site-animate">
+                        You can have a look at my work experiences and educations and you can download my CV.
+                    </p>
+                    <p><button mat-stroked-button (click)="scroll('section-resume')" class="outline color-white">See My Experiences</button></p>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section> <!-- sectiong -->
+
+    <section class="site-section bg-light " id="section-resume">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p><button mat-stroked-button (click)="getCV()" class="outline" download="file.pdf">Download my CV</button></p>
+                </div>
+                <div class="col-md-12 mb-5">
+                    <div class="section-heading text-center">
+                        <h2>My <strong>Resume</strong></h2>
+                    </div>
+                </div>
+
+                <div class="col-md-6" >
+                    <h2 class="mb-5">Education</h2>
+                    <div class="resume-item mb-4" *ngFor="let school of schoolData" (click)="openSchoolDialog(school)" style="cursor: pointer;">
+                        <span class="date"><span class="icon-calendar"></span>{{school.time}}</span>
+                        <h3>{{school.title}}</h3>
+                        <span>{{school.subject}}</span>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="mb-5">Experience</h2>
+                    <div class="resume-item mb-4" *ngFor="let work of workData" (click)="openWorkDialog(work)" style="cursor: pointer;">
+                        <span class="date"><span class="icon-calendar"></span>{{work.time}}</span>
+                        <h3>{{work.title}}</h3>
+                        <span>{{work.role}}</span>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section> <!-- .section -->
+</div>

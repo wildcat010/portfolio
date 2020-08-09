@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "skill": "TypeScript",
+    "mastering": 85
+  },
+  {
+    "id": 2,
+    "skill": "C# ASP .Net",
+    "mastering": 75
+  },
+  {
+    "id": 3,
+    "skill": "Angular - Angular JS",
+    "mastering": 75
+  },
+  {
+    "id": 4,
+    "skill": "HTML/CSS",
+    "mastering": 80
+  },
+  {
+    "id": 4,
+    "skill": "Bootstrap",
+    "mastering": 90
+  },
+  {
+    "id": 4,
+    "skill": "JQuery",
+    "mastering": 70
+  },
+  {
+    "id": 4,
+    "skill": "Sql Server - TSql",
+    "mastering": 70
+  },
+  {
+    "id": 4,
+    "skill": "Entity Framework - Linq",
+    "mastering": 75
+  },
+  {
+    "id": 4,
+    "skill": "React",
+    "mastering": 55
+  }
+]

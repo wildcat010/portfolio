@@ -1,0 +1,14 @@
+﻿<div [@flyInOut]="'in'">
+    <section class="site-hero" style="background-image: url(assets/code.jpg);" id="section-home" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row intro-text align-items-center justify-content-center">
+                <div class="col-md-10 text-center">
+                    <h1 class="site-heading site-animate">Hey, my name is <strong>Benoit</strong></h1>
+                    <p class="lead site-subheading mb-4 site-animate">I am a Web Developer based in Manchester at the moment. I have a full range of knowledge in web technologies from front-end to back office.</p>
+                    <p><button mat-stroked-button (click)="scroll('aboutMe')" class="outline">More On Me</button></p>
+                </div>
+            </div>
+        </div>
+    </section> <!-- sectiong -->
+        <router-outlet></router-outlet>
+</div>

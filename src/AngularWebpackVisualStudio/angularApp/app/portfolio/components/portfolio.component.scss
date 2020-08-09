@@ -1,0 +1,23 @@
+﻿.outline {
+    border: 1px solid grey;
+    outline: none;
+}
+/deep/ .site-list li.site-check:before {
+    background-image: url(assets/icons8-dot.svg);
+    background-repeat: no-repeat;
+    content: '';
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+    background-size: contain;
+    top: 0.3em;
+}
+
+/deep/ .site-list {
+    list-style: none;
+    padding-left: 1em;
+}
+
+/deep/ .picture {
+    border: 1px solid black;
+}

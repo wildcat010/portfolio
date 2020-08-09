@@ -1,0 +1,25 @@
+﻿import { Component, Inject } from '@angular/core';
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { DialogData } from "./../interface/DialogData";
+
+
+@Component({
+    selector: 'app.school.dialog.component',
+    templateUrl: 'school.dialog.component.html',
+    styleUrls: ['./school.dialog.component.scss'],
+})
+
+
+
+export class SchoolDialogComponent {
+
+    constructor(
+        public dialogRef: MatDialogRef<SchoolDialogComponent>,
+        @Inject(MAT_DIALOG_DATA) public data: DialogData) {
+    }
+
+    onNoClick(): void {
+        this.dialogRef.close();
+    }
+
+}

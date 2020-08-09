@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "title": "BET365",
+    "description": "I work as Front End Developer in a team of 5 developers, Our mission is to redesign, improve the user experience, add some features and recently we are redesigning the website to be responsive with a keys improvements of the core system.",
+    "time": "August 2018 - Present",
+    "place": "England, Manchester",
+    "role": "Software Developer",
+    "skills": [ "Typescript", "HTML/CSS", "VB .NET", "Entity Framework", "TSql" ],
+    "skills2": [ "Jira", "Git", "Agile", "Jenkins" ],
+    "activity": "Online gambling"
+  },
+  {
+    "id": 2,
+    "title": "Granby Marketing",
+    "description": "I worked as a web developer, my role was the maintenance in-house systems, development of promotional websites and one of the big project was to write the specifications and test plans for a brand new warehouse system..",
+    "time": "May 2016 - February 2018",
+    "place": "England, Blackburn",
+    "role": "Web Developer",
+    "skills": [ "C#", "ASP .NET MVC4/Core", "Entity Framework", "LINQ", "JQuery", "AngularJS/Knockout", "Bootstrap", "UML" ],
+    "skills2": [ "TFS", "Agile" ],
+    "activity": " Marketing and Warehouse"
+  },
+  {
+    "id": 3,
+    "title": "QISoft",
+    "description": "This is my first job in England, as a support developer, my mission was to communicate with the customers to inform of the new features of the software and collect the bugs. I had to organize the bugs in a level of priority to allow the team to fix them during each sprint..",
+    "time": "June 2015 - February 2016",
+    "place": "England, Leyland",
+    "role": "Support Developer",
+    "skills": [ "C#", "ASP .NET MVC4", "Entity Framework", "Linq", "JQuery", "AngularJs/Knockout", "Bootstrap" ],
+    "skills2": [ "Agile" ],
+    "activity": "Consulting and Quality Management"
+  },
+  {
+    "id": 4,
+    "title": "Societe General",
+    "description": "In my last job in France, my mission was to maintain the back office system who was in charge to manage different accounts/transactions of the bank.",
+    "time": "October 2014 - June 2015",
+    "place": "France, Val de Fontenay",
+    "role": "Maintenance Developer",
+    "skills": [ "C/C++", "Java J2ee", "Oracle", "Sql" ],
+    "skills2": [ "Agile", "Linux" ],
+    "activity": "Bank"
+  },
+  {
+    "id": 5,
+    "title": "MPhasis Wyde",
+    "description": "This is my first job after graduation, I was working as a software developer in an insurance company.",
+    "time": "February 2014 - October 2014",
+    "place": "France, Val de Fontenay",
+    "role": "Maintenance Developer",
+    "skills": [ "C/C++", "Java J2ee", "Oracle", "Sql" ],
+    "skills2": [ "Agile", "Linux" ],
+    "activity": "Insurance"
+  },
+  {
+    "id": 6,
+    "title": "Multitoll",
+    "description": "My first job as a software developer, I alternate 5 weeks of company and 4 weeks of school for 4 years (Master M2I and Master SIIC). I saw a variety of technologies and my first experience working as a team in a dynamic and complex environment.",
+    "time": "2009 - 2013",
+    "place": "France",
+    "role": "Software Developer",
+    "skills": [ "C/C++", "Qt4", "Java", "PERL", "HTML/CSS", "UML" ],
+    "skills2": [ "Embedded System" ],
+    "activity": "Electrical Equipment"
+  }
+]

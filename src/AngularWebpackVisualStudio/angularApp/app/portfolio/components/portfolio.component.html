@@ -1,0 +1,43 @@
+﻿<div [@XInOut]="'in'">
+    <section class="site-portfolio" style="background-image: url(assets/portfolio.png);" id="section-home" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row intro-text align-items-center justify-content-center">
+                <div class="col-md-10 text-center">
+                    <h1 class="site-heading site-animate">Portfolio</h1>
+                    <p class="lead site-subheading mb-4 site-animate">
+                        Here you can find a description of the main project I have worked for from scratch to production.
+                        <br/>And a description of the technologies I used.
+                    </p>
+                    
+                    <p><button mat-stroked-button (click)="scroll('section-features')" class="outline" style="color: #E5E5E5">My Projects</button></p>
+                </div>
+            </div>
+        </div>
+    </section> <!-- sectiong -->
+
+    <section class="site-section" id="section-features">
+        <div class="container">
+            <div class="col-lg-5 pl-lg-5">
+                <div class="section-heading">
+                    <h2>My <strong>Portfolio</strong></h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row site-section" *ngFor="let portfolio of portfolioData">
+                <div [className]="portfolio.id % 2 ? 'col-md-8' : 'col-md-8 order-md-2'" class="picture">
+                    <p><img src="assets/{{portfolio.image}}" alt="" class="img-fluid"></p>
+                </div>
+
+                <div class="col-md-4">
+                    <h3 class="mb-3">{{portfolio.title}}</h3>
+                    <p>{{portfolio.description}}</p>
+                    <p>url: {{portfolio.url}}</p>
+                    <ul class="site-list" *ngFor="let techno of portfolio.technologies">
+                        <li class="site-check">{{techno}}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

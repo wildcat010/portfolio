@@ -1,0 +1,83 @@
+﻿<div [@contactAnim]="'in'">
+    <section class="site-portfolio" style="background-image: url(assets/contact.jpg);" id="section-home" data-stellar-background-ratio="0.5">
+        <div class="container">
+            <div class="row intro-text align-items-center justify-content-center">
+                <div class="col-md-10 text-center">
+                    <h1 class="site-heading site-animate">Contact Me</h1>
+                    <p class="lead site-subheading mb-4 site-animate">If you want to work with me. You can contact me with this formular. If you have any question, please feel free to ask.</p>
+                    <p><button mat-stroked-button (click)="scroll('section-contact')" class="outline bg-outline">Contact Me</button></p>
+                    
+                </div>
+            </div>
+        </div>
+    </section> <!-- sectiong -->
+
+    <section class="site-section bg-light" id="section-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mb-5">
+                    <div class="section-heading text-center">
+                        <h2>Wanna <strong>Start Work</strong> With Me?</h2>
+                    </div>
+                </div>
+                <div class="col-md-7 mb-5 mb-md-0">
+                    <form action="" class="site-form" [formGroup]="contactForm" #formDirective="ngForm" (ngSubmit)="sendEmail(formDirective)" novalidate>
+                        <h3 class="mb-5">Get In Touch</h3>
+                        <div>
+                            <mat-form-field appearance="standard" class="formText">
+                                <mat-label>Your Email</mat-label>
+                                <input matInput placeholder="Email" formControlName="email">
+                            </mat-form-field>
+                            <div>
+                                <p *ngIf="email.errors?.required">The email address must contain at least the @ character</p>
+                            </div>
+                        </div>
+                        <div>
+                            <mat-form-field appearance="standard" class="formText">
+                                <mat-label>Subject</mat-label>
+                                <input matInput placeholder="Subject" formControlName="subject">
+                            </mat-form-field>
+                        </div>
+                        <div>
+                            <mat-form-field class="example-full-width formText">
+                                <mat-label>Leave a comment</mat-label>
+                                <textarea matInput placeholder="Leave a comment..." style="height: 120px;" formControlName="description"></textarea>
+                            </mat-form-field>
+                        </div>
+                        <div style="display:inline-flex;">
+                            <button *ngIf="!sendingEmail" mat-stroked-button class="outline" type="submit" [disabled]="!contactForm.valid">Send Message &nbsp;</button>&nbsp;<mat-spinner [diameter]="30"  *ngIf="sendingEmail"></mat-spinner>
+                        </div>
+                    </form>
+
+                    <br />
+                    <div *ngIf="failedRequest">
+                        <br />
+                        <mat-toolbar color="warn" *ngFor="let error of myErrors" >
+                            <span>{{error}}</span>
+                            <!-- This fills the remaining space of the current row -->
+                            <span class="example-fill-remaining-space"></span>
+                        </mat-toolbar>
+                    </div>
+                </div>
+                <div class="col-md-5 pl-md-5">
+                    <h3 class="mb-5">My Contact Details</h3>
+                    <ul class="site-contact-details">
+                        <li>
+                            <span class="text-uppercase">Email</span>
+                            benoit.bourgeon@yahoo.fr
+                        </li>
+                        <li>
+                            <span class="text-uppercase">Phone</span>
+                            +44 7305 53 24 28
+                        </li>
+                        <li>
+                            <span class="text-uppercase">Address</span>
+                            Manchester <br>
+                            United Kingdom
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

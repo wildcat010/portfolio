@@ -1,0 +1,28 @@
+﻿.outline {
+    border: 1px solid grey;
+    outline: none;
+}
+
+/deep/ .mat-form-field.mat-focused .mat-form-field-label {
+    color: green;
+}
+
+/deep/ .mat-form-field.mat-focused .mat-form-field-ripple {
+    background-color: green;
+}
+
+/deep/ .formText {
+    width: 350px;
+}
+
+
+.bg-outline {
+    background-color: #303030;
+    color: #fff;
+}
+
+@media (max-width: 991.98px) {
+    .formText {
+        width: 250px;
+    }
+}

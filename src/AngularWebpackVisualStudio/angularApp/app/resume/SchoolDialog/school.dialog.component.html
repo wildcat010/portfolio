@@ -1,0 +1,21 @@
+﻿<div>
+    <h1 mat-dialog-title>{{data.school.title}} &nbsp;</h1> 
+    <span class="date">{{data.school.time}}</span>
+
+    <div mat-dialog-content>
+        <br />
+        <div *ngIf="data.school.option">
+
+            <p style="text-align: justify;"><span style="font-weight: bold">Option: </span><br /> {{data.school.option}}</p>
+        </div>
+
+
+        <p style="text-align: justify;"><span style="font-weight: bold">Description: </span><br /> {{data.school.description}}</p>
+        <br />
+        <span class="school" style="font-weight: bold">{{data.school.place}}</span>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button [mat-dialog-close] cdkFocusInitial class="outline">Close</button>
+    </div>
+</div>
+

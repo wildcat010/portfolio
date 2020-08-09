@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "title": "Master SIIC",
+    "subject": "Intelligent systems and communicants",
+    "description": "The Master SIIC addresses the problem of designing intelligent systems (real-time and embedded computing, Artificial Intelligence, signal and image processing, networks, telecoms, etc.). This Master emphasizes the problem of integrating all of these components to make a functional system.",
+    "option": "Intelligent and distributed systems",
+    "time": "2012 - 2013",
+    "place": "University Cergy Pontoise, France"
+  },
+  {
+    "id": 2,
+    "title": "Master M2I",
+    "subject": "IT engineering manager",
+    "option": "Real-time and on-board system, software and systems engineering",
+    "description": "This work-study in 3 years course, prepares for team management and project management with a digital dimension, by a multidisciplinary approach.",
+    "time": "2009 - 2012",
+    "place": "Cergy Pontoise, France"
+  },
+  {
+    "id": 3,
+    "title": "BTS IRIS",
+    "subject": "Higher technician certificate in IT and networks for industry and technical services",
+    "description": "The BTS in Computer Science and Networks for Industry and Technical Services is a course open to graduates. In 2 years, it trains computer scientists capable of developing and managing computer applications and systems intended for the production of capital goods or technical services.",
+    "time": "2007 - 2009",
+    "place": "Louis Jouvet High School, France"
+  }
+]

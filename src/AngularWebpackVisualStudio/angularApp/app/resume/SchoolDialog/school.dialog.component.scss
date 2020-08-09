@@ -1,0 +1,21 @@
+﻿/deep/ .mat-dialog-container {
+    width: 650px;
+}
+
+
+@media (max-width: 991.98px) {
+    /deep/ .mat-dialog-container {
+        width: 450px;
+    }
+
+    /deep/ .mat-dialog-content {
+        max-height: 60vh;
+    }
+}
+
+
+.outline {
+    border: 1px solid grey;
+    outline: none;
+    background-color: #fff !important;
+}
